@@ -35,22 +35,25 @@ This process would keep the contributors more synchronized and reduce the chance
  Screenshot Evidence
 
  Task 1
-[Task 1](screenshots/task1.png)
+[Clone A added a 10% discount for customers who buy 5 or more tickets. The change was committed and pushed to the remote repository.
+](screenshots/task1.png)
 
  Task 2
-[Task 2](screenshots/task2.png)
+[Clone B changed the ticket price calculation from `Math.floor()` to `Math.round()`. The push was rejected because Clone B was behind the remote branch, demonstrating the need to synchronize before pushing.
+](screenshots/task2.png)
 
  Task 3
-[Task 3](screenshots/task3.png)
+[Clone B fetched the latest changes and merged them with its own work. The conflict was resolved by keeping both the 10% group discount and the new rounding behavior.](screenshots/task3.png)
 
  Task 4
-[Task 4](screenshots/task4.png)
+[Clone C added a 50% surcharge for premium or VIP seating. Its push was rejected because the remote branch had newer changes from the other clone.
+](screenshots/task4.png)
 
  Task 5
-[Task 5](screenshots/task5.png)
+[Clone C fetched the latest changes and resolved the conflict by combining the group discount, rounding, and VIP surcharge. The resulting code was tested to make sure all features worked together.](screenshots/task5.png)
 
  Task 6
-[Task 6](screenshots/task6.png)
+[Clone A added a flat $10 discount without first synchronizing with the remote branch, causing another rejected push. The branch was then rebased, and conflicts in multiple files were resolved while keeping the group discount, rounding, VIP surcharge, and flat discount.](screenshots/task6.png)
 
  Task 7
-[Task 7](screenshots/task7.png)
+[The completed `feature/group-pricing` branch was merged into `main`. The final changes were pushed to GitHub, and the completed version was tagged as `v1.0-synced`.](screenshots/task7.png)
